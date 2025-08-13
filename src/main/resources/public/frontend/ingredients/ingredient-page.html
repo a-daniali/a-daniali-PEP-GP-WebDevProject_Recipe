@@ -19,7 +19,7 @@
     <!-- TODO: Create a section to display the list of ingredients -->
     <!-- - Include an h2 titled "Ingredients" -->
     <!-- - Include a <ul> with id "ingredient-list" -->
-    <section>
+    <section class="section ">
         <h2>Ingredients</h2>
         <ul id="ingredient-list"></ul>
     </section>
@@ -28,20 +28,24 @@
     <!-- - Include an h2 titled "Add an Ingredient" -->
     <!-- - Include an input field with id "add-ingredient-name-input" -->
     <!-- - Include a button with id "add-ingredient-submit-button" -->
-    <section>
+    <section class="section">
         <h2>Add an Ingredient</h2>
-        <input type="text" id="add-ingredient-name-input" placeholder="Ingredient name" />
-        <button id="add-ingredient-submit-button">Add Ingredient</button>
+        <div class="grid-2">
+            <input type="text" id="add-ingredient-name-input" placeholder="Ingredient name" />
+            <button id="add-ingredient-submit-button">Add Ingredient</button>
+        </div>
     </section>
 
     <!-- TODO: Create a section to delete an ingredient -->
     <!-- - Include an h2 titled "Delete an Ingredient" -->
     <!-- - Include an input field with id "delete-ingredient-name-input" -->
     <!-- - Include a button with id "delete-ingredient-submit-button" -->
-    <section>
+    <section class="section">
         <h2>Delete an Ingredient</h2>
-        <input type="text" id="delete-ingredient-name-input" placeholder="Ingredient name" />
-        <button id="delete-ingredient-submit-button">Delete Ingredient</button>
+        <div class="grid-2">
+            <input type="text" id="delete-ingredient-name-input" placeholder="Ingredient name" />
+            <button id="delete-ingredient-submit-button">Delete Ingredient</button>
+        </div>
     </section>
 
     <script src="ingredient-page.js"></script>

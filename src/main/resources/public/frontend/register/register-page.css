@@ -29,3 +29,90 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #fff8f0, #fef6e4);
+    color: #4e342e;
+}
+
+
+#register-form {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#register-form h1 {
+    text-align: center;
+    color: #d35400;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+#register-form p {
+    text-align: center;
+    font-size: 1em;
+    color: #6e2c00;
+    margin-bottom: 20px;
+}
+
+
+#register-form hr {
+    border: none;
+    border-top: 1px solid #f5cba7;
+    margin: 20px 0;
+}
+
+
+#register-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #6e2c00;
+}
+
+
+#register-form input[type="text"],
+#register-form input[type="email"],
+#register-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fffaf5;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#register-form input:focus {
+    border-color: #e67e22;
+    box-shadow: 0 0 6px rgba(230, 126, 34, 0.4);
+    outline: none;
+}
+
+
+#register-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#register-button:hover {
+    background-color: #d35400;
+}

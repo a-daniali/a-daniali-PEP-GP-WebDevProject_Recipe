@@ -43,3 +43,76 @@ textarea, input {
 textarea {
     height: 50px;
 }
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #fff8f0, #fef6e4);
+    color: #4e342e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+h1 {
+    color: #d35400;
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+#login-input,
+#password-input {
+    width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fffaf5;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#login-input:focus,
+#password-input:focus {
+    border-color: #e67e22;
+    box-shadow: 0 0 6px rgba(230, 126, 34, 0.4);
+    outline: none;
+}
+
+
+#login-button,
+#logout-button {
+    width: 320px;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-button:hover,
+#logout-button:hover {
+    background-color: #d35400;
+}
+
+
+#logout-button {
+    display: none;
+}
