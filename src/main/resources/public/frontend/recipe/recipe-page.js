@@ -97,10 +97,17 @@ window.addEventListener("DOMContentLoaded", () => {
         try {
             await fetch(`${BASE_URL}/recipes`, {
                 method: "POST",
+                mode: "cors",
+                cache: "no-cache",
+                credentials: "same-origin",
                 headers: {
                     "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Headers": "*",
                     "Authorization": "Bearer " + sessionStorage.getItem("auth-token")
                 },
+                redirect: "follow",
+                referrerPolicy: "no-referrer",
                 body: JSON.stringify({ name, instructions })
             });
             addNameInput.value = "";
@@ -172,6 +179,11 @@ window.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        if (sessionStorage.getItem("is-admin") != "true" ) {
+            alert("Must be admin!");
+            return;
+        }
+
         try {
             await fetch(`${BASE_URL}/recipes/${recipe.id}`, {
                 method: "DELETE",
@@ -234,20 +246,26 @@ window.addEventListener("DOMContentLoaded", () => {
             alert("No token found.");
             return;
         }
-
         try {
             const response = await fetch(`${BASE_URL}/logout`, {
                 method: "POST",
+                mode: "cors",
+                cache: "no-cache",
+                credentials: "same-origin",
                 headers: {
-                    "Authorization": "Bearer " + token,
-                    "Content-Type": "application/json"
-                }
+                    "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Headers": "*",
+                    "Authorization": "Bearer " + sessionStorage.getItem("auth-token")
+                },
+                redirect: "follow",
+                referrerPolicy: "no-referrer",
             });
 
             if (response.ok) {
                 sessionStorage.removeItem("auth-token");
                 sessionStorage.removeItem("is-admin");
-                window.location.href = "login-page.html";
+                window.location.href = "../login/login-page.html";
             } else {
                 alert("Logout failed.");
             }
