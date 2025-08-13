@@ -5,30 +5,53 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - User Registration Page</title>
     <link rel="stylesheet" href="register-page.css">
 </head>
+
 <body>
 
-    <!-- TODO: Add a heading (h1) with text "Register" -->
+    <form id="register-form">
+        <!-- TODO: Add a heading (h1) with text "Register" -->
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
 
-    <!-- TODO: Add a label or paragraph for "Username" -->
-    <!-- TODO: Add an input element for username with id="username-input" -->
+        <!-- TODO: Add a label or paragraph for "Username" -->
+        <!-- TODO: Add an input element for username with id="username-input" -->
+        <label for="username-input"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username-input" id="username-input">
 
-    <!-- TODO: Add a label or paragraph for "Email" -->
-    <!-- TODO: Add an input element for email with id="email-input" and type="email" -->
 
-    <!-- TODO: Add a label or paragraph for "Password" -->
-    <!-- TODO: Add an input element for password with id="password-input" and type="password" -->
+        <!-- TODO: Add a label or paragraph for "Email" -->
+        <!-- TODO: Add an input element for email with id="email-input" and type="email" -->
+        <label for="email-input"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email-input" id="email-input">
 
-    <!-- TODO: Add a label or paragraph for "Repeat Password" -->
-    <!-- TODO: Add an input element for repeat password with id="repeat-password-input" and type="password" -->
+        <!-- TODO: Add a label or paragraph for "Password" -->
+        <!-- TODO: Add an input element for password with id="password-input" and type="password" -->
+        <label for="password-input"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password-input" id="password-input">
 
-    <!-- TODO: Add a register button with id="register-button" and text "Register" -->
+        <!-- TODO: Add a label or paragraph for "Repeat Password" -->
+        <!-- TODO: Add an input element for repeat password with id="repeat-password-input" and type="password" -->
+        <label for="repeat-password-input"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="repeat-password-input" id="repeat-password-input">
+        <hr>
+
+        <!-- TODO: Add a register button with id="register-button" and text "Register" -->
+        <button type="submit" class="register-button" id="register-button">Register</button>
+    </form>
+
+
+
+
 
     <script src="register-page.js"></script>
 </body>
+
 </html>
