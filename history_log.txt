@@ -1,7 +1,7 @@
-commit e01f8be1cd0e28dcf7c0e2c682787bf723ecc480
+commit 129c49021d7dc6ec7c4c73678aa02c196a589610
 Author: amir daniali <revature@amirdaniali.com>
-Date:   Wed Aug 13 21:15:31 2025 +0000
+Date:   Wed Aug 13 22:42:47 2025 +0000
 
-    All tests passing.
+    Improved Css Stylings
 
- 7 files changed, 54 insertions(+), 18 deletions(-)
+ 17 files changed, 862 insertions(+), 134 deletions(-)
