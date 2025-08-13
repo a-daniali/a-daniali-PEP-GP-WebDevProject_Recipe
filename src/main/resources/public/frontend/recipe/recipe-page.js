@@ -99,8 +99,6 @@ window.addEventListener("DOMContentLoaded", () => {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Access-Control-Allow-Origin": "*",
-                    "Access-Control-Allow-Headers": "*",
                     "Authorization": "Bearer " + sessionStorage.getItem("auth-token")
                 },
                 body: JSON.stringify({ name, instructions })
@@ -178,8 +176,6 @@ window.addEventListener("DOMContentLoaded", () => {
             await fetch(`${BASE_URL}/recipes/${recipe.id}`, {
                 method: "DELETE",
                 headers: {
-                    "Access-Control-Allow-Origin": "*",
-                    "Access-Control-Allow-Headers": "*",
                     "Authorization": "Bearer " + sessionStorage.getItem("auth-token")
                 }
             });
@@ -199,8 +195,7 @@ window.addEventListener("DOMContentLoaded", () => {
     async function getRecipes() {
         try {
             const response = await fetch(`${BASE_URL}/recipes`, {
-                headers: {"Access-Control-Allow-Origin": "*",
-                    "Access-Control-Allow-Headers": "*",
+                headers: {
                     "Authorization": "Bearer " + sessionStorage.getItem("auth-token")
                 }
             });
@@ -245,8 +240,6 @@ window.addEventListener("DOMContentLoaded", () => {
                 method: "POST",
                 headers: {
                     "Authorization": "Bearer " + token,
-                    "Access-Control-Allow-Origin": "*",
-                    "Access-Control-Allow-Headers": "*",
                     "Content-Type": "application/json"
                 }
             });
